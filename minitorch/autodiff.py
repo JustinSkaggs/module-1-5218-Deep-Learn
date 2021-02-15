@@ -179,8 +179,24 @@ class FunctionBase:
             (see `is_constant` to remove unneeded variables)
 
         """
+
         # TODO: Implement for Task 1.3.
-        raise NotImplementedError('Need to implement for Task 1.3')
+
+        result = []
+
+        for index, arg in enumerate(inputs):
+
+            # Skip Constants
+            if is_constant(arg):
+                continue
+
+            output = wrap_tuple(cls.backward(ctx, d_output))[index]
+
+            vwd = VariableWithDeriv(arg, output)
+
+            result.append(vwd)
+
+        return result
 
 
 def is_leaf(val):
@@ -201,6 +217,44 @@ def backpropagate(final_variable_with_deriv):
     Args:
        final_variable_with_deriv (:class:`VariableWithDeriv`): The final variable
            and its derivative that we want to propagate backward to the leaves.
+
+    1  procedure BFS(G, root) is
+    2      let Q be a queue
+    3      label root as discovered
+    4      Q.enqueue(root)
+    5      while Q is not empty do
+    6          v := Q.dequeue()
+    7          if v is the goal then
+    8              return v
+    9          for all edges from v to w in G.adjacentEdges(v) do
+    10              if w is not labeled as discovered then
+    11                  label w as discovered
+    12                  Q.enqueue(w)
+
     """
     # TODO: Implement for Task 1.4.
-    raise NotImplementedError('Need to implement for Task 1.4')
+
+    # Initialize a queue with the final Variable+derivative
+    Queue = [final_variable_with_deriv]
+
+    while len(Queue) > 0:
+
+        VWD = Queue.pop(0)
+
+        if is_leaf(VWD.variable):
+            VWD.variable._add_deriv(VWD.deriv)
+            continue
+
+        ctx = VWD.variable.history.ctx
+        inputs = VWD.variable.history.inputs
+        d_out = VWD.deriv
+
+        for _vwd in VWD.variable.history.last_fn.chain_rule(ctx, inputs, d_out):
+
+            X = _vwd
+
+            if is_leaf(X.variable):
+                X.variable._add_deriv(X.deriv)
+                continue
+
+            Queue.append(_vwd)
