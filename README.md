@@ -19,6 +19,7 @@ cp ../Module-0/operators.py ../Module-0/module.py minitorch/
 python run_tests.py
 ```
 ![Simple.png](images//Simple.png)
+<img src="images//Simple.png">
 
 ```
 Epoch  0  loss  33.827013303316406 correct 30
