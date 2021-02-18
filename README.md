@@ -23,5 +23,7 @@ python run_tests.py
 
 <img src="images//Xor.png">
 
+![](images//Simple.png)
+
 
 
