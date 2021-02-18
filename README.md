@@ -21,6 +21,8 @@ python run_tests.py
 ![Simple.png](images//Simple.png)
 
 ```
+Setting up a new session... SIMPLE 500 EPOCHS
+
 Epoch  0  loss  33.827013303316406 correct 30
 Epoch  10  loss  32.84253095185056 correct 30
 Epoch  20  loss  31.071647776975524 correct 33
@@ -78,57 +80,58 @@ Process finished with exit code 0
 ![Xor.png](images//Xor.png)
 
 ```
-Setting up a new session...
-Epoch  0  loss  41.3044475408928 correct 32
-Epoch  10  loss  28.19325864108287 correct 32
-Epoch  20  loss  25.496845326120678 correct 36
-Epoch  30  loss  23.223157747050482 correct 38
-Epoch  40  loss  20.6293719328228 correct 43
-Epoch  50  loss  17.457875377284243 correct 47
-Epoch  60  loss  14.674894540503034 correct 48
-Epoch  70  loss  21.067770258016637 correct 36
-Epoch  80  loss  11.18685851718468 correct 48
-Epoch  90  loss  10.519528177595507 correct 48
-Epoch  100  loss  9.759244262561088 correct 48
-Epoch  110  loss  7.689686973125776 correct 48
-Epoch  120  loss  7.603424291757357 correct 49
-Epoch  130  loss  8.30156537324401 correct 46
-Epoch  140  loss  7.976541338468319 correct 46
-Epoch  150  loss  6.6896297683430594 correct 48
-Epoch  160  loss  6.182284860908452 correct 48
-Epoch  170  loss  6.100301488587491 correct 47
-Epoch  180  loss  5.890894569058776 correct 47
-Epoch  190  loss  5.440738653641937 correct 47
-Epoch  200  loss  4.7796264676545 correct 48
-Epoch  210  loss  4.4057110847622925 correct 48
-Epoch  220  loss  4.535102515556293 correct 48
-Epoch  230  loss  4.821059628242067 correct 47
-Epoch  240  loss  5.483257608017951 correct 47
-Epoch  250  loss  4.662352852524266 correct 47
-Epoch  260  loss  3.5651110167510387 correct 48
-Epoch  270  loss  3.20788242248477 correct 49
-Epoch  280  loss  3.262027012277489 correct 48
-Epoch  290  loss  3.4755593839189087 correct 48
-Epoch  300  loss  3.865992326917327 correct 48
-Epoch  310  loss  4.203547630020823 correct 47
-Epoch  320  loss  3.803132890413559 correct 48
-Epoch  330  loss  3.2722210306173096 correct 48
-Epoch  340  loss  3.1034183693354356 correct 48
-Epoch  350  loss  3.032535262690371 correct 49
-Epoch  360  loss  3.1352453240716605 correct 49
-Epoch  370  loss  3.1424342947861246 correct 49
-Epoch  380  loss  3.1026491731307693 correct 49
-Epoch  390  loss  2.9359078780169434 correct 49
-Epoch  400  loss  2.8970515279018376 correct 49
-Epoch  410  loss  2.7817488485265383 correct 49
-Epoch  420  loss  2.8099484740494187 correct 49
-Epoch  430  loss  2.330966101079426 correct 49
-Epoch  440  loss  1.9337120187937056 correct 50
-Epoch  450  loss  2.4719181918414614 correct 49
-Epoch  460  loss  3.3788412931342364 correct 48
-Epoch  470  loss  3.232314042540007 correct 49
-Epoch  480  loss  2.630199185610404 correct 49
-Epoch  490  loss  1.747232116180363 correct 50
+Setting up a new session... XOR 500 EPOCHS
+
+Epoch  0  loss  79.68839328658335 correct 23
+Epoch  10  loss  32.029231998330495 correct 29
+Epoch  20  loss  29.995507376961285 correct 38
+Epoch  30  loss  28.082957150985052 correct 39
+Epoch  40  loss  26.28898945723006 correct 44
+Epoch  50  loss  24.72211278252818 correct 42
+Epoch  60  loss  22.642244711493703 correct 41
+Epoch  70  loss  20.124404382206293 correct 43
+Epoch  80  loss  19.576863219782467 correct 43
+Epoch  90  loss  18.320859657323684 correct 43
+Epoch  100  loss  16.14247528937387 correct 45
+Epoch  110  loss  15.089980550373866 correct 45
+Epoch  120  loss  14.503441182182426 correct 44
+Epoch  130  loss  12.036770067411268 correct 45
+Epoch  140  loss  15.130196158316812 correct 44
+Epoch  150  loss  9.420424942561086 correct 47
+Epoch  160  loss  13.76717541475813 correct 43
+Epoch  170  loss  9.2618544850719 correct 47
+Epoch  180  loss  10.108844867387225 correct 47
+Epoch  190  loss  8.892713161656122 correct 47
+Epoch  200  loss  9.370246167980655 correct 47
+Epoch  210  loss  6.2531072792537605 correct 49
+Epoch  220  loss  7.8150481239440905 correct 48
+Epoch  230  loss  6.2990972278817035 correct 48
+Epoch  240  loss  5.006823580238938 correct 50
+Epoch  250  loss  24.504382153143695 correct 41
+Epoch  260  loss  4.682943894195033 correct 50
+Epoch  270  loss  3.906930323628362 correct 50
+Epoch  280  loss  3.373768721729277 correct 50
+Epoch  290  loss  3.6543449961639194 correct 50
+Epoch  300  loss  30.249581526798984 correct 41
+Epoch  310  loss  16.046273609510383 correct 42
+Epoch  320  loss  3.0562552989174057 correct 50
+Epoch  330  loss  2.6567547808390577 correct 50
+Epoch  340  loss  2.395018706568034 correct 50
+Epoch  350  loss  2.221184681038281 correct 50
+Epoch  360  loss  2.0811273631183376 correct 50
+Epoch  370  loss  1.9592573732263319 correct 50
+Epoch  380  loss  1.8522906335489164 correct 50
+Epoch  390  loss  1.7524637233402411 correct 50
+Epoch  400  loss  1.6902082494938742 correct 50
+Epoch  410  loss  1.648876137747731 correct 50
+Epoch  420  loss  2.0799353395849844 correct 50
+Epoch  430  loss  35.39391341039688 correct 41
+Epoch  440  loss  1.5693834382579466 correct 50
+Epoch  450  loss  1.444351614576377 correct 50
+Epoch  460  loss  1.358308169936939 correct 50
+Epoch  470  loss  1.2903267941535501 correct 50
+Epoch  480  loss  1.2289239164427919 correct 50
+Epoch  490  loss  1.1710908289320583 correct 50
 
 Process finished with exit code 0
 ```
