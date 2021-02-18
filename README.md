@@ -18,11 +18,10 @@ cp ../Module-0/operators.py ../Module-0/module.py minitorch/
 ```
 python run_tests.py
 ```
-<img src="images//Xor.png">
-
-![Simple.png](images//Simple.png)
 
 ![Xor.png](images//Xor.png)
+
+![Simple.png](images//Simple.png)
 
 
 
