@@ -23,5 +23,7 @@ python run_tests.py
 
 ![Simple.png](images//Simple.png)
 
+![Xor.png](images//Xor.png)
+
 
 
